@@ -1,0 +1,46 @@
+name: Feature Request
+description: Suggest an idea for this project
+title: 'Request: '
+labels: ['feature']
+body:
+  - type: markdown
+    attributes:
+      value: Thank you for suggesting this feature! Providing detailed information increases the chances of your request being considered.
+  - type: checkboxes
+    id: new-bug
+    attributes:
+      label: Is there an existing issue or pull request for this?
+      description: Please search to see if an issue or pull request already exists for the feature you desire.
+      options:
+        - label: I have searched the existing issues and pull requests
+          required: true
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Feature Description
+      description: Describe the problem or need that this feature would address.
+      placeholder: Provide a clear and concise description of the issue. For example, "I'm always frustrated when..."
+    validations:
+      required: true
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Desired Solution
+      description: Describe the solution or functionality you envision.
+      placeholder: Clearly explain what you would like to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Alternatives Considered
+      description: Have you thought about any alternative solutions or features?
+      placeholder: Briefly outline any alternative ideas you have explored.
+    validations:
+      required: true
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Provide any extra details or context that might be helpful.
+      placeholder: Add any relevant information or background here.

@@ -1,0 +1,30 @@
+# Ignore Dependencies
+node_modules/
+.pnp/
+package-lock.json
+yarn.lock
+
+# Ignore Yarn files
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+!.yarnrc.yml
+
+# Ignore miscellaneous system files
+.DS_Store
+Thumbs.db
+
+# Ignore Local environment variables
+.env
+
+# Ignore IDE Settings
+.idea/
+.vscode/
+
+# Ignore Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log

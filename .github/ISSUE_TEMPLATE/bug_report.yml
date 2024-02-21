@@ -1,0 +1,66 @@
+name: Bug Report
+description: File a bug report here
+title: 'Bug: '
+labels: ['bug:unverified']
+body:
+  - type: markdown
+    attributes:
+      value: Thank you for taking the time to report this issue!
+  - type: checkboxes
+    id: new-bug
+    attributes:
+      label: Is there an existing issue for this bug?
+      description: Please search to see if an issue already exists for the bug you encountered.
+      options:
+        - label: I have searched the existing issues
+          required: true
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Bug Description
+      description: Describe the issue you encountered and what you expected to happen.
+      placeholder: Provide a clear and concise description of the bug.
+    validations:
+      required: true
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps To Reproduce
+      description: Provide detailed steps to reproduce the issue.
+      placeholder: |
+        Please provide step-by-step instructions on how to reproduce the bug.
+        For example:
+        1. Navigate to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: Describe what you expected to happen.
+      placeholder: Provide a clear and concise description of the expected behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, provide screenshots to illustrate the issue.
+      placeholder: Paste any relevant screenshots here.
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Share any additional information or context about the bug.
+      placeholder: Add any other relevant context about the problem here.
+  - type: textarea
+    id: system-info
+    attributes:
+      label: System Information
+      description: Provide system information to help diagnose the issue.
+      render: shell
+      placeholder: Include relevant system details here.
+    validations:
+      required: true
